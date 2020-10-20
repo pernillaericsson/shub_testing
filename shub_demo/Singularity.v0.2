@@ -1,0 +1,14 @@
+Bootstrap:docker  
+From:ubuntu:16.04
+
+%labels
+MAINTAINER Pernilla
+
+%runscript 
+	$@
+
+%post  
+	echo "This section happens once after bootstrap to build the image." 
+	apt-get install vim  
+	echo "RoooAAAAR"
+	

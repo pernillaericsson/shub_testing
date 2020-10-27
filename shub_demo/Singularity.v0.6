@@ -11,7 +11,8 @@ From: ubuntu:16.04
 
 # RUN instruction (e.g. download files, install software)
 %post
-	apt-get -y update && apt-get -y upgrade
+	apt-get -y update && apt-get -y upgrade;
+	apt-get install apt-utils
 
 # Test that conda works
 %test

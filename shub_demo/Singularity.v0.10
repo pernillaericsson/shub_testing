@@ -1,5 +1,0 @@
-BootStrap: library
-From: ubuntu:16.04
-
-%runscript
-    $@
